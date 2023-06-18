@@ -453,11 +453,25 @@ p {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.absolute {
+  position: absolute;
+}
 .relative {
   position: relative;
 }
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+.z-10 {
+  z-index: 10;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
+}
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 .-ml-10p {
   margin-left: -10%;
@@ -489,6 +503,9 @@ p {
 .min-h-60 {
   min-height: 60vh;
 }
+.min-h-screen {
+  min-height: 100vh;
+}
 .w-1\/4 {
   width: 25%;
 }
@@ -498,8 +515,17 @@ p {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+.flex-row {
+  flex-direction: row;
+}
 .flex-col {
   flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-center {
+  align-items: center;
 }
 .items-baseline {
   align-items: baseline;
@@ -510,8 +536,34 @@ p {
 .justify-center {
   justify-content: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 .justify-items-end {
   justify-items: end;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .border-pumpkin {
   --tw-border-opacity: 1;
@@ -554,11 +606,22 @@ p {
 .p-2 {
   padding: 0.5rem;
 }
+.px-5p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .align-bottom {
   vertical-align: bottom;
 }
 .font-sans {
   font-family: Montserrat, sans-serif;
+}
+.font-serif {
+  font-family: Oranienbaum, serif;
 }
 .text-7xl {
   font-size: 4.5rem;
@@ -576,6 +639,10 @@ p {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -584,6 +651,9 @@ p {
 }
 .tracking-superwide {
   letter-spacing: 0.2em;
+}
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -595,6 +665,23 @@ p {
 
 
 /* ----------- ADDITIONAL COMPONENTS FOR REFERENCE --------- */
+
+@media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+  .sm\:flex {
+    display: flex;
+  }
+  .sm\:min-h-90 {
+    min-height: 90vh;
+  }
+  .sm\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
 
 @media (min-width: 1024px) {
   .lg\:text-8xl {
