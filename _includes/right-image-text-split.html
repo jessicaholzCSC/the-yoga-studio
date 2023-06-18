@@ -1,11 +1,11 @@
-<section class="grid sm:grid-cols-2 sm:min-h-80">
+<section class="grid sm:grid-cols-2 sm:min-h-80 border-t border-pumpkin">
 
     <!-- second option: flex flex-col justify-end  -->
 
-    <div class="px-10p py-20 self-end">
-        <h2> {{page.image_right.heading}} </h2>
-        <p class="font-sans-serif text-sm leading-[150%] mb-8"> {{page.image_right.description}} </p>
-        <a class="button" href="{{page.image_right.button_url}}">{{page.image_right.button_text}}</a>
+    <div class="px-10p py-20 self-end max-w-xl">
+        <h2 class="mb-8"> {{page.image_right.heading}} </h2>
+        <p class="font-sans-serif text-sm leading-[150%]"> {{page.image_right.description}} </p>
+        <a class="button mt-8" href="{{page.image_right.button_url}}">{{page.image_right.button_text}}</a>
     </div>
-    <div class="bg-image min-h-50" style="background-position: {{page.image_right.image_focus | default: 'center' }}; background-image: url('{{page.image_right.image}}')"></div>
+    <div class="bg-image min-h-50 border-l border-pumpkin" style="background-position: {{page.image_right.image_focus | default: 'center' }}; background-image: url('{{page.image_right.image}}')"></div>
 </section>

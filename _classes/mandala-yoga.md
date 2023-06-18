@@ -1,7 +1,7 @@
 ---
 layout: class
 title: Mandala Yoga
-description: This is a short description of the mandala yoga class
+description: This is a short description of the mandala yoga class. Duis aliqua est laboris enim qui. Adipisicing sint duis deserunt proident aliquip consequat sint nisi veniam sunt amet sit.
 featured_image: /images/the-yoga-studio-3.jpg
 author: 
 seo: 

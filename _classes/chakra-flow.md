@@ -1,7 +1,7 @@
 ---
 layout: class
 title: Chakra Flow
-description: This is a short description of the chakra flow yoga class
+description: This is a short description of the chakra flow yoga class. Duis aliqua est laboris enim qui. Adipisicing sint duis deserunt proident aliquip consequat sint nisi veniam sunt amet sit.
 featured_image: /images/the-yoga-studio-7.jpg
 author: 
 seo: 

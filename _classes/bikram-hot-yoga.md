@@ -1,7 +1,7 @@
 ---
 layout: class
 title: Bikram Hot Yoga
-description: This is a short description of the bikram hot yoga class
+description: This is a short description of the bikram hot yoga class. Duis aliqua est laboris enim qui. Adipisicing sint duis deserunt proident aliquip consequat sint nisi veniam sunt amet sit.
 featured_image: /images/the-yoga-studio-8.jpg
 author: 
 seo: 

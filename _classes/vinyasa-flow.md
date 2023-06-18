@@ -1,7 +1,7 @@
 ---
 layout: class
 title: Vinyasa Flow
-description: This is a short description of the vinyasa flow yoga class
+description: This is a short description of the vinyasa flow yoga class. Duis aliqua est laboris enim qui. Adipisicing sint duis deserunt proident aliquip consequat sint nisi veniam sunt amet sit.
 featured_image: /images/the-yoga-studio-9.jpg
 author: 
 seo: 

@@ -1,14 +1,16 @@
 <section class="grid sm:grid-cols-2 sm:min-h-80">
-    <div class="bg-image min-h-50" style="background-position: {{page.image_left.image_focus | default: 'center' }}; background-image: url('{{page.image_left.image}}')">
-        <h2> {{page.image_left.heading}} </h2>
-        <p class="font-sans-serif text-sm leading-[150%] mb-8"> {{page.image_left.description}} </p>
-        <a class="button" href="{{page.image_left.button_url}}">{{page.image_left.button_text}}</a>
+    <div style="background-position: {{page.image_left.image_focus | default: 'center' }}; background-image: url('{{page.image_left.image}}')" class="bg-image min-h-50 grid items-end border-t border-pumpkin">
+        <div class="px-10p py-20 text-white max-w-sm"> 
+            <h2 class="mb-8"> {{page.image_left.heading}} </h2>
+            <p class="font-sans-serif text-sm leading-[150%]"> {{page.image_left.description}} </p>
+            <a class="button mt-8" href="{{page.image_left.button_url}}">{{page.image_left.button_text}}</a>
+        </div>
     </div>
-    <div>
+    <div class="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 divide-x divide-y divide-pumpkin overflow-clip border border-pumpkin">
         {% for class in site.classes %}
-        <div>
-            <h3>{{class.title}}</h3>
-            <p>{{class.description}}</p>
+        <div class="p-8 flex flex-col justify-end -m-px">
+            <h3 class="sm:text-2xl lg:text-3xl">{{class.title}}</h3>
+            <p class="font-sans-serif text-sm leading-[150%]">{{class.description}}</p>
         </div>
         {% endfor %}
     </div>
