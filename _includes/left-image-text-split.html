@@ -1,8 +1,8 @@
-<section>
-    <div class="min-h-70" style="background-image: url('{{page.image_left.image}}')">
+<section class="grid sm:grid-cols-2 sm:min-h-80">
+    <div class="bg-image min-h-50" style="background-position: {{page.image_left.image_focus | default: 'center' }}; background-image: url('{{page.image_left.image}}')">
         <h2> {{page.image_left.heading}} </h2>
-        <p> {{page.image_left.description}} </p>
-        <a href="{{page.image_left.button_url}}">{{page.image_left.button_text}}</a>
+        <p class="font-sans-serif text-sm leading-[150%] mb-8"> {{page.image_left.description}} </p>
+        <a class="button" href="{{page.image_left.button_url}}">{{page.image_left.button_text}}</a>
     </div>
     <div>
         {% for class in site.classes %}
