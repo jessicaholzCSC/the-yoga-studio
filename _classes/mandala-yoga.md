@@ -2,7 +2,7 @@
 layout: class
 title: Mandala Yoga
 description: This is a short description of the mandala yoga class
-featured_image: 'https://placekitten.com/900/600'
+featured_image: /images/the-yoga-studio-3.jpg
 author: 
 seo: 
   title: This should appear in the browser tab

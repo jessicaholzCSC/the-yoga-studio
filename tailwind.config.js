@@ -9,9 +9,13 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['Montserrat', 'sans-serif'],
-      serif: ['Italiana', 'serif'],
+      serif: ['Oranienbaum', 'serif'],
     },
     extend: {
+      colors: {
+        pumpkin: "#C97324",
+        cream: "#FBF2E9",
+        },
       spacing: {
         '5p': '5%',
         '10p': '10%',
