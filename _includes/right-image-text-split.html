@@ -1,8 +1,8 @@
-<section>
-    <div>
+<section class="grid grid-cols-2">
+    <div class="col-span-1">
         <h2> {{page.image_right.heading}} </h2>
-        <p> {{page.image_right.description}} </p>
+        <p class="font-sans-serif text-md"> {{page.image_right.description}} </p>
         <a href="{{page.image_right.button_url}}">{{page.image_right.button_text}}</a>
     </div>
-    <div class="min-h-70" style="background-image: url('{{page.image_right.image}}')"></div>
+    <div class="col-span-1 min-h-70 bg-cover bg-center aspect-portrait" style="background-image: url('{{page.image_right.image}}')"></div>
 </section>
