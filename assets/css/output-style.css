@@ -486,6 +486,9 @@ p {
 .min-h-90 {
   min-height: 90vh;
 }
+.min-h-60 {
+  min-height: 60vh;
+}
 .w-1\/4 {
   width: 25%;
 }
@@ -498,8 +501,17 @@ p {
 .flex-col {
   flex-direction: column;
 }
+.items-baseline {
+  align-items: baseline;
+}
+.justify-end {
+  justify-content: flex-end;
+}
 .justify-center {
   justify-content: center;
+}
+.justify-items-end {
+  justify-items: end;
 }
 .border-pumpkin {
   --tw-border-opacity: 1;
@@ -513,17 +525,37 @@ p {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
 }
+.bg-cream {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+}
+.bg-pumpkin {
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
 }
 .bg-center {
   background-position: center;
 }
+.bg-top {
+  background-position: top;
+}
 .p-5p {
   padding: 5%;
 }
 .p-8 {
   padding: 2rem;
+}
+.p-10p {
+  padding: 10%;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.align-bottom {
+  vertical-align: bottom;
 }
 .font-sans {
   font-family: Montserrat, sans-serif;
@@ -536,11 +568,26 @@ p {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .uppercase {
   text-transform: uppercase;
 }
+.leading-\[150\%\] {
+  line-height: 150%;
+}
 .tracking-superwide {
   letter-spacing: 0.2em;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 
@@ -548,3 +595,10 @@ p {
 
 
 /* ----------- ADDITIONAL COMPONENTS FOR REFERENCE --------- */
+
+@media (min-width: 1024px) {
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+}

@@ -1,8 +1,8 @@
-<section class="grid grid-cols-2">
-    <div class="col-span-1">
+<section class="grid grid-cols-2 bg-cream">
+    <div class="col-span-1 p-5p flex flex-col items-baseline">
         <h2> {{page.image_right.heading}} </h2>
-        <p class="font-sans-serif text-md"> {{page.image_right.description}} </p>
-        <a href="{{page.image_right.button_url}}">{{page.image_right.button_text}}</a>
+        <p class="font-sans-serif text-sm leading-[150%]"> {{page.image_right.description}} </p>
+        <a class="uppercase font-sans-serif text-lg text-white bg-pumpkin p-2" href="{{page.image_right.button_url}}">{{page.image_right.button_text}}</a>
     </div>
-    <div class="col-span-1 min-h-70 bg-cover bg-center aspect-portrait" style="background-image: url('{{page.image_right.image}}')"></div>
+    <div class="col-span-1 min-h-70 bg-cover bg-center" style="background-image: url('{{page.image_right.image}}')"></div>
 </section>
