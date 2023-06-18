@@ -1,11 +1,19 @@
-<section class="p-10p">
-    <div class="grid grid-cols-3">
-        {% for class in site.classes limit:3 %}
-        <div>
-            <h3>{{class.title}}</h3>
-            <p>{{class.description}}</p>
-            <a href="/schedule">Sign up</a>
+<section class="p-10p grid sm:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-18 xl:gap-6">
+
+        {% for class in site.classes %}
+
+        <div class="border border-pumpkin text-center">
+            <div class="pt-3 px-5 border-b border-pumpkin">
+                <div class="bg-image aspect-square border border-pumpkin" 
+                    style="background-image: url('{{class.featured_image}}');">
+                </div>
+                <h3 class="sm:text-2xl lg:text-3xl mt-5 mb-4">{{class.title}}</h3>
+            </div>
+            <div class="p-6">
+                <p class="font-sans-serif text-sm leading-[150%] mb-4"></p>{{class.description}}</p>
+                <a class="button mt-5" href="/schedule">Sign up</a>
+            </div>
         </div>
+        
         {% endfor %}
-    </div>
 </section>

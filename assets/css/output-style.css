@@ -509,6 +509,15 @@ p {
 .-ml-10p {
   margin-left: -10%;
 }
+.-mr-24 {
+  margin-right: -6rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -518,17 +527,11 @@ p {
 .mt-5 {
   margin-top: 1.25rem;
 }
-.mt-8 {
-  margin-top: 2rem;
-}
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
 .mt-6 {
   margin-top: 1.5rem;
 }
-.-mr-24 {
-  margin-right: -6rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 .flex {
   display: flex;
@@ -548,11 +551,11 @@ p {
 .w-1\/3 {
   width: 33.333333%;
 }
-.w-full {
-  width: 100%;
-}
 .w-\[33vw\] {
   width: 33vw;
+}
+.w-full {
+  width: 100%;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -565,9 +568,6 @@ p {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -596,20 +596,14 @@ p {
 .justify-between {
   justify-content: space-between;
 }
-.gap-2 {
-  gap: 0.5rem;
-}
-.gap-5 {
-  gap: 1.25rem;
-}
-.gap-6 {
-  gap: 1.5rem;
-}
 .gap-12 {
   gap: 3rem;
 }
-.gap-4 {
-  gap: 1rem;
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-6 {
+  gap: 1.5rem;
 }
 .gap-8 {
   gap: 2rem;
@@ -640,14 +634,14 @@ p {
 .border {
   border-width: 1px;
 }
+.border-b {
+  border-bottom-width: 1px;
+}
 .border-l {
   border-left-width: 1px;
 }
 .border-t {
   border-top-width: 1px;
-}
-.border-b {
-  border-bottom-width: 1px;
 }
 .border-pumpkin {
   --tw-border-opacity: 1;
@@ -657,6 +651,10 @@ p {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
+.bg-pumpkin {
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+}
 .bg-stone-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(245 245 244 / var(--tw-bg-opacity));
@@ -664,10 +662,6 @@ p {
 .bg-stone-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(231 229 228 / var(--tw-bg-opacity));
-}
-.bg-pumpkin {
-  --tw-bg-opacity: 1;
-  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
 }
 .bg-transparent {
   background-color: transparent;
@@ -682,25 +676,28 @@ p {
 .bg-center {
   background-position: center;
 }
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.p-5p {
-  padding: 5%;
-}
-.p-8 {
-  padding: 2rem;
-}
 .p-10p {
   padding: 10%;
 }
 .p-2 {
   padding: 0.5rem;
 }
+.p-5p {
+  padding: 5%;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.p-8 {
+  padding: 2rem;
+}
 .px-10p {
   padding-left: 10%;
   padding-right: 10%;
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .px-5p {
   padding-left: 5%;
@@ -717,8 +714,11 @@ p {
 .pb-5 {
   padding-bottom: 1.25rem;
 }
-.text-right {
-  text-align: right;
+.pt-3 {
+  padding-top: 0.75rem;
+}
+.text-center {
+  text-align: center;
 }
 .font-sans {
   font-family: Montserrat, sans-serif;
@@ -750,20 +750,13 @@ p {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-pumpkin {
   --tw-text-opacity: 1;
   color: rgb(201 115 36 / var(--tw-text-opacity));
 }
-.outline-none {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-.outline-1 {
-  outline-width: 1px;
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .outline-white {
   outline-color: #fff;
@@ -779,6 +772,58 @@ p {
 
 
 /* ----------- ADDITIONAL COMPONENTS FOR REFERENCE --------- */
+
+
+/* Change styles of booking plugin */
+
+/* change background color, font, text, borders */
+#momence-embed #momence-plugin-host-schedule * {
+  border-radius: 0px;
+  --tw-border-opacity: 1;
+  border-color: rgb(201 115 36 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
+
+/* make teacher & bio disappear */
+#momence-embed #momence-plugin-host-schedule .momence-session-teacher {
+    display: none;
+}
+
+/* format button layout */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
+  display: inline-block;
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* made image disappear */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-image {
+    display: none;
+}
+
+/* Hide "Powered by Momence" */
+
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
+    display: none;
+}
+
+#momence-embed #momence-plugin-host-schedule .gZOyVg::after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+}
 
 .hover\:bg-pumpkin:hover {
   --tw-bg-opacity: 1;
@@ -806,11 +851,11 @@ p {
   .sm\:max-w-none {
     max-width: none;
   }
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -819,10 +864,6 @@ p {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
   .sm\:text-2xl {
     font-size: 1.5rem;
@@ -849,5 +890,14 @@ p {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .xl\:gap-6 {
+    gap: 1.5rem;
   }
 }
