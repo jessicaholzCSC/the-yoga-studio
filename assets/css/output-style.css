@@ -487,11 +487,17 @@ p {
   left: 0px;
   right: 0px;
 }
+.-left-1\/3 {
+  left: -33.333333%;
+}
 .z-10 {
   z-index: 10;
 }
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 .-m-px {
   margin: -1px;
@@ -521,6 +527,9 @@ p {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.-mr-24 {
+  margin-right: -6rem;
+}
 .flex {
   display: flex;
 }
@@ -541,6 +550,9 @@ p {
 }
 .w-full {
   width: 100%;
+}
+.w-\[33vw\] {
+  width: 33vw;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -618,6 +630,9 @@ p {
 }
 .self-end {
   align-self: flex-end;
+}
+.self-center {
+  align-self: center;
 }
 .overflow-clip {
   overflow: clip;
