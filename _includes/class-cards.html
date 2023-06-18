@@ -1,6 +1,6 @@
-<section>
-    <div>
-        {% for class in site.classes %}
+<section class="p-10p">
+    <div class="grid grid-cols-3">
+        {% for class in site.classes limit:3 %}
         <div>
             <h3>{{class.title}}</h3>
             <p>{{class.description}}</p>
