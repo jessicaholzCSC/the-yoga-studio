@@ -1,14 +1,16 @@
-<section>
-    <form>
-        <label for="name"> Name </label>
-        <input type="text" id="name" name="name">
+<section class="p-10p">
 
-        <label for="email"> Email </label>
-        <input type="email" id="email" name="email">
+        <form class="col-start-2 center">
+            <label class="text-pumpkin uppercase" for="name"> Name </label>
+            <input class="bg-transparent border-t border-pumpkin outline-white" type="text" id="name" name="name">
+    
+            <label class="text-pumpkin uppercase" for="email"> Email </label>
+            <input class="bg-transparent border-t border-pumpkin outline-white" type="email" id="email" name="email">
+    
+            <label class="text-pumpkin uppercase" for="message"> Message </label>
+            <textarea class="bg-transparent border border-pumpkin outline-white" id="message" name="message"></textarea>
+    
+            <div><button type="submit" class="button bg-pumpkin text-white hover:text-pumpkin hover:bg-white border border-pumpkin"> Send </button></div>
+        </form>
 
-        <label for="message"> Message </label>
-        <textarea id="message" name="message"></textarea>
-
-        <button type="submit"> Send </button>
-    </form>
 </section>
