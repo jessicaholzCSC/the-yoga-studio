@@ -466,6 +466,9 @@ p {
 }
 .button {
   display: inline-block;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(201 115 36 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(201 115 36 / var(--tw-bg-opacity));
   padding-left: 1rem;
@@ -476,6 +479,12 @@ p {
   letter-spacing: 0.1em;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
 }
 .absolute {
   position: absolute;
@@ -501,6 +510,10 @@ p {
 }
 .-m-px {
   margin: -1px;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 .my-3 {
   margin-top: 0.75rem;
@@ -533,6 +546,9 @@ p {
 .mt-8 {
   margin-top: 2rem;
 }
+.block {
+  display: block;
+}
 .flex {
   display: flex;
 }
@@ -556,6 +572,9 @@ p {
 }
 .w-full {
   width: 100%;
+}
+.max-w-2xl {
+  max-width: 42rem;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -703,6 +722,10 @@ p {
   padding-left: 5%;
   padding-right: 5%;
 }
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -719,6 +742,9 @@ p {
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .font-sans {
   font-family: Montserrat, sans-serif;
@@ -758,6 +784,14 @@ p {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.placeholder-pumpkin::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-placeholder-opacity));
+}
+.placeholder-pumpkin::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-placeholder-opacity));
+}
 .outline-white {
   outline-color: #fff;
 }
@@ -776,65 +810,82 @@ p {
 
 /* Change styles of booking plugin */
 
-/* change background color, font, text, borders */
-#momence-embed #momence-plugin-host-schedule * {
-  border-radius: 0px;
-  --tw-border-opacity: 1;
-  border-color: rgb(201 115 36 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
-  font-family: Montserrat, sans-serif;
-  font-weight: 300;
+/* Styling the headings  */
+#momence-embed #momence-plugin-host-schedule h4 {
+  font-family: Oranienbaum, serif;
   --tw-text-opacity: 1;
   color: rgb(201 115 36 / var(--tw-text-opacity));
 }
 
-/* make teacher & bio disappear */
-#momence-embed #momence-plugin-host-schedule .momence-session-teacher {
+/* Hide the class type text above the class title */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-type {
     display: none;
 }
 
-/* format button layout */
-#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
-  display: inline-block;
-  --tw-bg-opacity: 1;
-  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-/* made image disappear */
+/* Hide featured image */
+#momence-embed #momence-plugin-host-schedule .jDJBAl,
 #momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-image {
     display: none;
 }
 
-/* Hide "Powered by Momence" */
+/* Teacher Name & Bio */
+#momence-embed #momence-plugin-host-schedule .momence-session-teacher {
+    display: none;
+}
+
+/* Style the featured button  */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-booked_button {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(201 115 36 / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+/* Remove the border from the arrows left and right at the top  */
+#momence-embed #momence-plugin-host-schedule .momence-arrow-button {
+  border-style: none;
+}
+
+/* Add more space below the first row  */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-first_row {
+  padding-bottom: 1rem;
+}
+
+
+/* Add more space below the first row  */
+#momence-embed #momence-plugin-host-schedule .momence-event_type_select-button {
+  pointer-events: none;
+  font-family: Oranienbaum, serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* Hide powered by momence */
 
 #momence-embed #momence-plugin-host-schedule .momence-host_schedule-powered_by_momence {
     display: none;
 }
 
+/* Styling the lines under the list of pages */
 #momence-embed #momence-plugin-host-schedule .gZOyVg::after {
   --tw-bg-opacity: 1;
   background-color: rgb(201 115 36 / var(--tw-bg-opacity));
 }
-
 .hover\:bg-pumpkin:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(201 115 36 / var(--tw-bg-opacity));
 }
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
@@ -870,7 +921,6 @@ p {
     line-height: 2rem;
   }
 }
-
 @media (min-width: 768px) {
   .md\:ml-auto {
     margin-left: auto;
@@ -885,14 +935,12 @@ p {
     text-align: right;
   }
 }
-
 @media (min-width: 1024px) {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 }
-
 @media (min-width: 1280px) {
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));

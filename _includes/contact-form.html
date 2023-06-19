@@ -1,16 +1,21 @@
-<section class="p-10p">
+<section class="p-5p">
 
-        <form class="col-start-2 center">
-            <label class="text-pumpkin uppercase" for="name"> Name </label>
-            <input class="bg-transparent border-t border-pumpkin outline-white" type="text" id="name" name="name">
+        <form class="grid gap-8 max-w-2xl mx-auto">
+
+            <input class="py-1 bg-transparent border-b border-pumpkin outline-white placeholder-pumpkin uppercase tracking-widest" 
+            type="text" id="name" name="name" placeholder="Name" aria-label="Name">
+            
+            <input class="bg-transparent border-b border-pumpkin outline-white placeholder-pumpkin uppercase tracking-widest" 
+            type="email" id="email" name="email" placeholder="Email" aria-label="Email">
+            
+            <div>
+                <label class="uppercase tracking-widest block" for="message">Message</label>
+                <textarea rows="8" class="py-1 w-full bg-transparent border border-pumpkin outline-white placeholder-pumpkin uppercase tracking-widest" 
+                id="message" name="message"></textarea>
+            </div>
+            
     
-            <label class="text-pumpkin uppercase" for="email"> Email </label>
-            <input class="bg-transparent border-t border-pumpkin outline-white" type="email" id="email" name="email">
-    
-            <label class="text-pumpkin uppercase" for="message"> Message </label>
-            <textarea class="bg-transparent border border-pumpkin outline-white" id="message" name="message"></textarea>
-    
-            <div><button type="submit" class="button bg-pumpkin text-white hover:text-pumpkin hover:bg-white border border-pumpkin"> Send </button></div>
+            <div class="text-right"><button type="submit" class="button"> Send </button></div>
         </form>
 
 </section>
