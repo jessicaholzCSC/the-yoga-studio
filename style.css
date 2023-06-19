@@ -8,8 +8,8 @@
 
 @layer base {
     
-    body {
-        @apply text-pumpkin bg-cream; 
+    body,html {
+        @apply text-pumpkin bg-cream w-screen overflow-x-hidden; 
     }
     h1, h2, h3, h4  {
         @apply font-serif mb-[0.5em];
@@ -61,6 +61,17 @@
 
 
 /* Change styles of booking plugin */
+
+
+/* Background  */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule {
+    @apply bg-cream;
+}
+
+/* Background  */
+#momence-embed #momence-plugin-host-schedule * {
+    @apply bg-cream text-pumpkin font-sans font-light rounded-none border-pumpkin;
+}
 
 /* Styling the headings  */
 #momence-embed #momence-plugin-host-schedule h4 {

@@ -310,7 +310,9 @@ video {
 [hidden] {
   display: none;
 }
-body {
+body,html {
+  width: 100vw;
+  overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(251 242 233 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -464,6 +466,34 @@ p {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
 .button {
   display: inline-block;
   border-width: 1px;
@@ -498,6 +528,15 @@ p {
 }
 .-left-1\/3 {
   left: -33.333333%;
+}
+.right-12 {
+  right: 3rem;
+}
+.right-6 {
+  right: 1.5rem;
+}
+.top-\[7vh\] {
+  top: 7vh;
 }
 .z-10 {
   z-index: 10;
@@ -558,14 +597,26 @@ p {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.h-0 {
+  height: 0px;
+}
+.h-12 {
+  height: 3rem;
+}
 .min-h-50 {
   min-height: 50vh;
 }
 .min-h-screen {
   min-height: 100vh;
 }
+.w-0 {
+  width: 0px;
+}
 .w-1\/3 {
   width: 33.333333%;
+}
+.w-12 {
+  width: 3rem;
 }
 .w-\[33vw\] {
   width: 33vw;
@@ -584,6 +635,12 @@ p {
 }
 .max-w-xs {
   max-width: 20rem;
+}
+.shrink {
+  flex-shrink: 1;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -647,8 +704,17 @@ p {
 .self-center {
   align-self: center;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .overflow-clip {
   overflow: clip;
+}
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+.rounded-full {
+  border-radius: 9999px;
 }
 .border {
   border-width: 1px;
@@ -700,6 +766,9 @@ p {
 }
 .p-2 {
   padding: 0.5rem;
+}
+.p-4 {
+  padding: 1rem;
 }
 .p-5p {
   padding: 5%;
@@ -809,6 +878,26 @@ p {
 
 
 /* Change styles of booking plugin */
+
+
+/* Background  */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+}
+
+/* Background  */
+#momence-embed #momence-plugin-host-schedule * {
+  border-radius: 0px;
+  --tw-border-opacity: 1;
+  border-color: rgb(201 115 36 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 242 233 / var(--tw-bg-opacity));
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(201 115 36 / var(--tw-text-opacity));
+}
 
 /* Styling the headings  */
 #momence-embed #momence-plugin-host-schedule h4 {
@@ -922,8 +1011,17 @@ p {
   }
 }
 @media (min-width: 768px) {
+  .md\:order-2 {
+    order: 2;
+  }
   .md\:ml-auto {
     margin-left: auto;
+  }
+  .md\:flex {
+    display: flex;
+  }
+  .md\:h-full {
+    height: 100%;
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -931,11 +1029,19 @@ p {
   .md\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
+  .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
   .md\:text-right {
     text-align: right;
   }
 }
 @media (min-width: 1024px) {
+  .lg\:top-\[2vh\] {
+    top: 2vh;
+  }
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;

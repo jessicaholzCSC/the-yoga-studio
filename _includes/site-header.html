@@ -1,8 +1,22 @@
 <header class="sm:flex flex-wrap flex-row justify-between items-center px-5p py-4 absolute z-10 inset-x-0">
     <a class="font-serif text-3xl" href="/"> The Yoga Studio </a>
-    <nav class="grid gap-2 my-3 sm:block sm:space-x-10 uppercase tracking-widest">
+
+    <!--  Burger Menu  -->
+
+    <div class="absolute bg-white top-[7vh] lg:top-[2vh] right-12 w-12 h-12 rounded-full cursor-pointer burger-button">
+        <nav class="burger-menu absolute right-6 md:flex w-0 overflow-hidden border border-white h-0 md:h-full items-center bg-white rounded-3xl md:space-x-10 uppercase tracking-widest">
+          <span class="p-4 md:order-2 text-right block">x</span>
+          <a href="/classes" class="p-4 uppercase block">Classes</a>
+          <a href="/schedule" class="p-4 uppercase block">Schedule</a>
+          <a href="/contact" class="p-4 uppercase block">Contact</a>
+        </nav>
+     </div>
+
+   <!-- Normal Desktop Navigation | working responsive | without background color -->
+     
+    <!-- <nav class="grid gap-2 my-3 sm:block sm:space-x-10 uppercase tracking-widest">
         <a href="/classes"> Our Classes </a>
         <a href="/schedule"> Schedule </a>
         <a href="/contact"> Contact </a>
-    </nav>
+    </nav> -->
 </header>

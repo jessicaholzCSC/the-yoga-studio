@@ -2,10 +2,10 @@
 
     <!-- second option: flex flex-col justify-end  -->
 
-    <div class="px-10p py-20 self-end max-w-xl">
+    <div class="px-10p py-20 self-end max-w-xl scroll-in-from-right">
         <h2 class="mb-8"> {{page.image_right.heading}} </h2>
         <p class="font-sans-serif text-sm leading-[150%]"> {{page.image_right.description}} </p>
         <a class="button mt-8" href="{{page.image_right.button_url}}">{{page.image_right.button_text}}</a>
     </div>
-    <div class="bg-image min-h-50 border-l border-pumpkin" style="background-position: {{page.image_right.image_focus | default: 'center' }}; background-image: url('{{page.image_right.image}}')"></div>
+    <div class="bg-image gsap-hide min-h-50 border-l border-pumpkin scroll-in-from-bottom" style="background-position: {{page.image_right.image_focus | default: 'center' }}; background-image: url('{{page.image_right.image}}')"></div>
 </section>
