@@ -4,9 +4,7 @@ title: Chakra Flow
 description: >-
   Chakra Flow Yoga is a dynamic and spiritually enriching practice that
   harmonizes the body, mind, and spirit through the exploration of the chakra
-  system. Rooted in the ancient wisdom of yoga, this transformative style
-  focuses on balancing and aligning the seven energy centers, or chakras, within
-  the body.
+  system. 
 featured_image: /images/the-yoga-studio-7.jpg
 author:
 seo:
